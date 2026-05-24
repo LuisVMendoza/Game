@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b0a0gbm5pc46m"]
+
+[ext_resource type="Script" uid="uid://bt3q5uujnn4qv" path="res://scripts/player.gd" id="1_5h8tl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0ue2q"]
+radius = 16.0
+
+[node name="Player" type="CharacterBody2D" unique_id=740132213]
+script = ExtResource("1_5h8tl")
+
+[node name="Body" type="Polygon2D" parent="." unique_id=437301349]
+color = Color(0.22, 0.75, 0.98, 1)
+polygon = PackedVector2Array(-14, -12, 14, 0, -14, 12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1786842527]
+shape = SubResource("CircleShape2D_0ue2q")
+
+[node name="Weapon" type="Node2D" parent="." unique_id=1570484198]
+position = Vector2(18, 0)
+
+[node name="Slash" type="Line2D" parent="Weapon" unique_id=1431180442]
+visible = false
+points = PackedVector2Array(0, -12, 16, 0, 0, 12)
+width = 5.0
+default_color = Color(1, 0.3, 0.3, 1)

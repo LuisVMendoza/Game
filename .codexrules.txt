@@ -1,0 +1,13 @@
+# Reglas para Codex en proyecto Godot
+
+## ✅ Lo que sí puede hacer
+- Escribir scripts completos en GDScript
+- Explicar cómo modificar nodos, señales o escenas
+- Sugerir estructuras para `project.godot` (como texto)
+
+## ❌ Lo que no puede hacer (sin permiso)
+- Modificar `project.godot` directamente (no funciona bien)
+- Mover o renombrar archivos automáticamente
+- Ejecutar el juego o comandos del sistema
+
+
